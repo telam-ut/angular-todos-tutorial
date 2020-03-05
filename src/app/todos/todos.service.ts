@@ -26,7 +26,7 @@ export class TodosService {
 
   public getTodos(): Observable<Todo[]> {
     return of(this.todos).pipe(
-      delay(2000),
+      delay(5000),
     );
   }
 }

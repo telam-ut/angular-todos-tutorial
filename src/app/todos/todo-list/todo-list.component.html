@@ -1,1 +1,6 @@
-<p>todo-list works!</p>
+<h2>Todo List:</h2>
+<div *ngFor="let todo of todos">
+  <h3>{{ todo.title }}</h3>
+  <textarea cols="60" rows="5">{{ todo.description }}</textarea>
+  <p> {{ todo.done ? 'Done' : 'Not Done' }}</p>
+</div>
