@@ -1,8 +1,8 @@
 <h2>Todo List:</h2>
-<app-edit-todo></app-edit-todo>
-<div *ngIf="!todos; else notLoading">
+<app-edit-todo (add)="addTodoViaAPI($event)"></app-edit-todo>
+<h1 *ngIf="!todos; else notLoading">
   Loading!
-</div>
+</h1>
 <ng-template #notLoading>
   <div *ngFor="let todo of todos">
     <h3>{{ todo.title }}</h3>

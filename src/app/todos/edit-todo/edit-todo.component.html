@@ -1,1 +1,10 @@
-<p>edit-todo works!</p>
+<h3>Add Todo</h3>
+<div>
+  <label>Title</label>
+  <input type="text" [(ngModel)]="title">
+</div>
+<div>
+  <label>Description</label>
+  <textarea [(ngModel)]="description"></textarea>
+</div>
+<button type="button" (click)="addTodo()">Add</button>

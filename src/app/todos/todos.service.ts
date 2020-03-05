@@ -29,4 +29,8 @@ export class TodosService {
       delay(5000),
     );
   }
+
+  public addTodo(todo: Todo): void {
+    this.todos = [ ...this.todos, todo];
+  }
 }
